@@ -1,9 +1,14 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
+
+    <!-- 任何在页面具体内容进行展示之前需要运行的代码都放在head标签下，比如一段js代码，或者是一个css文件链接。 -->
+
     <!-- <title>是用来写标题的，会显示在标签页那里 -->
     <title>html practise</title>
     <meta charset="utf-8"/>
+
+    <link rel="stylesheet" type="text/css" href="test1.css">
 </head>
 <body>
 
@@ -28,6 +33,25 @@
         <li>我是ol的li标签2</li>
         <li>我是ol的li标签3</li>
     </ol>
+
+    <!-- a标签中使用href属性，用来写链接 -->
+    <!-- id标签用来标记当前的链接，然后在css文件里面使用a#idname改变css样式 -->
+    <a href="http://www.liuchuo.net" id="blog">~这里是 柳婼的博客 的链接~</a>
+    <!-- br或者br/可以用来换行 -->
+    <br/>
+
+    <!-- 使用target标签来确定是新建标签打开还是在原网页基础上跳转 -->
+    <!-- 使用class标签标记一类，在css文件里面可以使用a.classname改变css样式 -->
+    <a href="http://www.baidu.com" target="_blank" class="myclass">_blank是在新的标签页里面打开</a>
+    <br/>
+    <a href="http://www.zhihu.com" target="_self" class="myclass">_self是在原网页基础上跳转，默认为_self</a>
+    <br/>
+
+    <!-- 相对路径是默认在本服务器下的，这样可以让自己在换服务器的时候不用一个个改绝对路径那样前面的服务器名称 -->
+    <a href="/Users/ChenXin/Downloads">My Downloads File</a>
+    <br/>
+    <!-- 也可以使用../返回当前html所在文件夹的上一层文件夹 -->
+    <a href="../../Java">返回两层，到Java文件夹下瞅瞅~</a>
 
 </body>
 </html>

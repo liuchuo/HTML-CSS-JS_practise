@@ -1,0 +1,14 @@
+p{
+    text-decoration: underline;
+}
+h1{
+    color:pink;
+}
+a#blog{
+    text-decoration: none;
+    color:#FF9999;
+}
+
+a.myclass{
+    color:#9999FF;
+}
