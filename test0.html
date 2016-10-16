@@ -10,16 +10,17 @@
 
     <link rel="stylesheet" type="text/css" href="test1.css">
 </head>
-<body>
+<!-- 可以给body添加class，使用时在css文件里面.text0 p或者.text0 h1 等等 -->
+<body class="text0">
 
     <!-- <p>会显示一行的内容 -->
     <p>p标签：这里显示一行的内容</p>
-
+<div class="header">
     <!-- h1~h6一共有六个标题大小 -->
     <h1>h1标签：一级标题</h1>
     <h2>h2标签：二级标题</h2>
-    <h6>h6标签：六级标题</h6>
-
+    <h6>h6标签：六级标题好小哦哈哈哈哈</h6>
+</div>
     <!-- 无序列表 -->
     <ul>
         <li>我是ul的li标签1</li>
@@ -52,6 +53,23 @@
     <br/>
     <!-- 也可以使用../返回当前html所在文件夹的上一层文件夹 -->
     <a href="../../Java">返回两层，到Java文件夹下瞅瞅~</a>
+
+    <p id="id1">你好，我是p标签里面的内容</p>
+    <p id="id2">你好，我是另一个p标签里面的内容</p>
+
+    <div class="class0">
+        <p>这是div里面的p</p>
+    </div>
+    <div class="class1">
+        <p>好巧我也是div里面的p</p>
+    </div>
+
+    <!-- 显示图片 img src -->
+    <ul class="img-show">
+        <li><img src="/Users/ChenXin/Desktop/iOS笔记/iOS需要的icons/可爱的小图标/bookicon.png" alt="bookicon"></li>
+        <li><img src="/Users/ChenXin/Desktop/iOS笔记/iOS需要的icons/可爱的小图标/treeicon.png" alt="treeicon"></li>
+        <li><img src="/Users/ChenXin/Desktop/iOS笔记/iOS需要的icons/可爱的小图标/mp3icon.png" alt="mp3icon"></li>
+    </ul>
 
 </body>
 </html>

@@ -4,11 +4,64 @@ p{
 h1{
     color:pink;
 }
+
+.header {
+    /* 将文字居中 */
+    text-align: center;
+    width: 800px;
+}
+/* #idname用来改变对应id标签的css样式 */
 a#blog{
     text-decoration: none;
     color:#FF9999;
 }
 
+/* .classname用来改变对应class标签的css样式 */
 a.myclass{
     color:#9999FF;
 }
+
+/* 使用空格分割嵌套的标签 */
+ul li{
+    color:#0099FF;
+}
+
+p#id1{
+    /* 使用padding属性设置盒子内部周边空白处的css内容 */
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+/* 使用border属性设置盒子的边界的css内容 */
+    border-width: 3px;
+    border-style: dashed;
+    border-color: pink;
+/* 使用margin属性设置盒子外部的css内容 */
+    margin-bottom: 50px;
+}
+
+p#id2{
+    /* padding 和 margin 是按照顺时针顺序从上开始 */
+    /* 如果只写两个，那么就是垂直 水平 两个方向对称 */
+    /* 如果只写一个，那就是所有的都是这样 */
+    padding: 12px 10px 20px 30px;
+    margin: 20px 20px 0px 3px;
+    /* border 按照 大小、虚实、颜色的顺序来设置参数 */
+    /* border也有上下左右 */
+    border-top: 4px solid #0099FF;
+    border-left: 3px dashed #99FFFF;
+}
+
+/* 使用.classname 属性标签的方式指定div里面classname下某属性的css样式 */
+.class0 p{
+    color: green;
+}
+.class1 p{
+    color:red;
+}
+
+
+.img-show li{
+    display: inline;
+}
+/* 如果类定义的样式有冲突，以后面一次为准，后定义的会自动覆盖前面定义的内容 */
