@@ -8,17 +8,25 @@
     <title>html practise</title>
     <meta charset="utf-8"/>
 
+    <!-- 使用style标签直接在html的head里面添加css样式 -->
+    <style>
+        h3{
+            color: #8FACAA;
+        }
+    </style>
     <link rel="stylesheet" type="text/css" href="test1.css">
 </head>
 <!-- 可以给body添加class，使用时在css文件里面.text0 p或者.text0 h1 等等 -->
 <body class="text0">
 
-    <!-- <p>会显示一行的内容 -->
-    <p>p标签：这里显示一行的内容</p>
+    <!-- <p>会显示一段的内容 -->
+    <p>p标签：这里显示一段的内容</p>
 <div class="header">
     <!-- h1~h6一共有六个标题大小 -->
     <h1>h1标签：一级标题</h1>
     <h2>h2标签：二级标题</h2>
+    <h3>h3标签：三级标题</h3>
+    <h4 style="color: blue">h4标签：四级标题</h4>
     <h6>h6标签：六级标题好小哦哈哈哈哈</h6>
 </div>
     <!-- 无序列表 -->
@@ -70,6 +78,52 @@
         <li><img src="/Users/ChenXin/Desktop/iOS笔记/iOS需要的icons/可爱的小图标/treeicon.png" alt="treeicon"></li>
         <li><img src="/Users/ChenXin/Desktop/iOS笔记/iOS需要的icons/可爱的小图标/mp3icon.png" alt="mp3icon"></li>
     </ul>
+
+    <div class="background1">
+        <p>背景图片专用div1</p>
+    </div>
+    <div class="background2">
+        <p>背景图片专用div2</p>
+    </div>
+    <div class="background3">
+        <p>背景图片专用div3</p>
+    </div>
+
+<!-- 表单 -->
+<form>
+    <!-- label有开/闭标签，input只有开标签 label和input都是行内级别的 -->
+    <!-- input有很多种，比如text password submit checkbox radio file -->
+    <!-- label和input分别使用for和id标记是否是一对儿，如果名称相同就是一对的 -->
+    <label for="name">姓名</label>
+    <input type="text" id="name">
+    <br/>
+
+    <label for="password">密码</label>
+    <input type="password" id="password">
+    <br/>
+
+    <label for="submit">提交</label>
+    <input type="submit" id="submit">
+    <br/>
+
+    <input type="checkbox" id="check">
+    <label for="checkbox">checkbox的label</label>
+    <br/>
+
+    <input type="radio" id="radio">
+    <label for="radio">radio的label</label>
+    <br/>
+    <label for="file">file的label在此~</label>
+    <input type="file" id="file">
+</form>
+
+<!-- 关于默认位置、绝对位置、相对位置的设置 -->
+<h2 class="title0">~~~~~~~~默认位置~~~~~~~~~~~~~</h2>
+<h2 class="title1">~~~~~~~~相对位置~~~~~~~~~~~~~</h2>
+<h2 class="title2">~~~~~~~~绝对absolute位置~~~~~~</h2>
+<h2 class="title3">~~~~~~~~绝对fixed位置~~~~~~~~~</h2>
+
+
 
 </body>
 </html>
